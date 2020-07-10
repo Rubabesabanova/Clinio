@@ -1,0 +1,37 @@
+.top-header {
+    @include section;
+    margin-top: $margin-lg*8;
+    .top-header-wrapper {
+        padding: $padding-xl 0;
+        margin: 0 $margin-xl;
+        background-color: $white;
+        font-family: $poppins;
+        .logo {
+            img {
+                height: $small-height;
+            }
+        }
+        .navbar {
+            .navbar-row {
+                a {
+                    color: $main-color;
+                    li {
+                        @include font($poppins, $font-sm, $bold);
+                        margin: 0 $margin-lg*3;
+                        padding-bottom: $padding-lg;
+                    }
+                }
+                .home-icon {
+                    border-bottom: $borderwidth-sm solid $black;
+                }
+            }
+        }
+        .appointment {
+            @include main-button;
+            @include bg-text-color-shift($button-color, $white);
+            padding: $padding-lg*2 $padding-xl;
+            font-size: $font-sm;
+            margin-left: $margin-xl*1.6;
+        }
+    }
+}

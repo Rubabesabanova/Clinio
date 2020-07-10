@@ -1,0 +1,29 @@
+.landing-page {
+    background-image: url(../image/portf_header.jpg);
+    @include bg-image-center;
+    @extend .margin-auto;
+    width: $weight-md;
+    height: $main-height;
+    margin-right: $margin-xl;
+    margin-top: $margin-xl*2;
+    .landing-info {
+        color: $main-color;
+        padding: $padding-xl*2 $padding-xl*1.5;
+        h1 {
+            @include font($poppins, $font-h, $bold);
+        }
+        h2 {
+            @include font($poppins, $font-h, $light-weight);
+            color: lighten($main-color, 5);
+        }
+        p {
+            margin: $margin-lg*4 0;
+            @include font($poppins, $font-xs, $regular-weight);
+            line-height: $line-height-main;
+            color: lighten($main-color, 12);
+        }
+        .our-services {
+            @include secondary-button;
+        }
+    }
+}

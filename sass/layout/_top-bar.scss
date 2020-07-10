@@ -1,0 +1,37 @@
+.top-bar {
+    @include section;
+    z-index: 11;
+    .top-bar-wrapper {
+        @include font($poppins, $font-sm, $regular-weight);
+        @include bg-text-color-shift($white, $main-color);
+        padding: $padding-md*4 0;
+        margin: 0 $margin-xl;
+        border-bottom: $borderwidth-sm solid $border-color;
+        .left-navbar {
+            .nav-link-address {
+                i {
+                    @include left-navbar-icon;
+                }
+            }
+            .nav-phone {
+                i {
+                    @include left-navbar-icon;
+                }
+                margin: 0 $margin-xl;
+            }
+        }
+        .nav-icons {
+            left: 0;
+            .header-icons {
+                li {
+                    color: $secondary-color;
+                    margin: 0 $margin-lg*2;
+                    font-size: $font-xl/2;
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}

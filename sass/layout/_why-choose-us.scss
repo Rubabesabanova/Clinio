@@ -1,0 +1,36 @@
+#why-choose-us {
+    padding: $padding-xl*2.5 $padding-xl*1.5;
+    font-family: $cabin;
+    .why-choose-us-wrapper {
+        margin: 0 36px;
+        color: $choose-color;
+        .text {
+            margin-bottom: $margin-xl;
+            .strong-header {
+                @include font($cabin, $font-xs*3, $very-bold);
+                @extend .block;
+            }
+            .light-header {
+                @include font($cabin, $font-xs*3, $very-light);
+                @extend .block;
+            }
+        }
+        .info-wrapper {
+            margin-top: $margin-xl;
+            .info-items {
+                .facilities {
+                    @include choose-icons;
+                }
+                .doctors {
+                    @include choose-icons;
+                }
+                .services {
+                    @include choose-icons;
+                }
+                .care {
+                    @include choose-icons;
+                }
+            }
+        }
+    }
+}

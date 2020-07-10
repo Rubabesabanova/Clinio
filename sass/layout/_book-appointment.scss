@@ -1,0 +1,72 @@
+.book-appointment {
+    @include bg-text-color-shift($rare-color, $white);
+    @extend .margin-auto;
+    max-width: $weight-xl;
+    border-radius: $border-md;
+    font-family: $poppins;
+    .book-appointment-wrapper {
+        border-right: $borderwidth-sm solid $border-color;
+        .container {
+            .header {
+                @include header;
+            }
+            .input-wrapper {
+                .input-row {
+                    margin-bottom: $padding-lg*6;
+                    input {
+                        @include input-style;
+                    }
+                }
+            }
+            textarea {
+                @include input-style;
+                border-radius: $border-md;
+                max-width: 100%;
+                width: $weight-sm;
+                max-height: $small-height*8;
+                height: $normal-height;
+                padding: $padding-lg*5;
+            }
+            .send-message {
+                @include secondary-button;
+                margin-top: $margin-lg*8;
+                &:hover {
+                    color: $white;
+                    border-color: $white;
+                }
+            }
+        }
+    }
+    .contact-us {
+        color: $white;
+        padding: $padding-lg*9;
+        line-height: $line-height-secondary;
+        .contact-text {
+            @include register-heading;
+        }
+        .address-header {
+            font-size: $font-lg;
+            margin-bottom: $margin-xl/2;
+        }
+        .address-info {
+            margin-bottom: $margin-xl/2;
+            font-size: $font-sm;
+            line-height: $line-height-secondary;
+            letter-spacing: $main-letter-spacing;
+            &.street {
+                margin-bottom: $margin-xl;
+            }
+        }
+        .call-direct {
+            bottom: 50px;
+            span {
+                @include font($poppins, $font-sm, $bold);
+                margin-bottom: $margin-lg*5;
+            }
+            .call-number {
+                @include font($poppins, $font-lg, $bold);
+                margin-top: $margin-lg*4;
+            }
+        }
+    }
+}

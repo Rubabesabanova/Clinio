@@ -1,0 +1,102 @@
+@mixin left-navbar-icon {
+    font-size: $font-xl/2;
+    color: $icon-color;
+    margin-right: $margin-lg*2;
+}
+
+//FONT
+@mixin font($font, $size, $weight) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin bg-text-color-shift($bg-color, $text-color) {
+    background: $bg-color;
+    color: $text-color;
+}
+
+@mixin section {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+}
+
+//BACKGROUND IMAGE
+@mixin bg-image-center {
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin main-button {
+    font-weight: $bold;
+    border: $borderwidth-sm solid transparent;
+    transition: all 0.3s ease;
+    font-family: $poppins;
+    &:hover {
+        @include bg-text-color-shift(transparent, $main-color);
+        border: $borderwidth-sm solid $black;
+    }
+}
+
+@mixin input-style {
+    width: $weight-sm/2;
+    height: $main-height/8;
+    margin-right: $margin-xl/2;
+    background-color: rgb(239, 245, 247);
+    border-radius: $border-md;
+    font-weight: $bold;
+    font-family: $poppins;
+    border: none;
+    padding: 0 $padding-lg*5;
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {
+        color: $input-color;
+    }
+}
+
+@mixin secondary-button {
+    padding: $margin-lg*2 $padding-lg*7;
+    font-size: $font-xl/2;
+    @include main-button;
+    @include bg-text-color-shift($button-color, $white);
+    border-radius: $border-md;
+}
+
+@mixin header {
+    font-size: $font-sm;
+    font-weight: $bold;
+    margin-bottom: $margin-xl;
+}
+
+@mixin register-heading {
+    color: $white;
+    margin-bottom: $margin-xl*1.1;
+    font-size: $font-sm;
+    font-weight: $bold;
+    line-height: $line-height-third;
+    letter-spacing: $main-letter-spacing;
+}
+
+@mixin choose-icons {
+    i {
+        font-size: $font-h;
+        color: #01addd;
+    }
+    .icon-content {
+        margin-top: $margin-lg*3;
+        h3 {
+            margin-bottom: $margin-lg*3;
+            font-size: $font-md;
+            font-weight: $very-bold;
+        }
+        p {
+            font-size: $font-sm;
+            line-height: $line-height-secondary;
+            letter-spacing: $main-letter-spacing;
+        }
+    }
+}

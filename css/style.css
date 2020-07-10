@@ -1,0 +1,674 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+}
+
+.container-full {
+  width: 100%;
+  padding: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.block, #why-choose-us .why-choose-us-wrapper .text .strong-header, #why-choose-us .why-choose-us-wrapper .text .light-header {
+  display: inline-block;
+}
+
+.margin-auto, .landing-page, .book-appointment {
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.display-none {
+  display: none;
+}
+
+/*  X oxunda yerlesdirme klasslari */
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+/* y oxunda yerlesdirme klasslari */
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.col-1 {
+  width: 8.33333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.top-bar {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  z-index: 11;
+}
+
+.top-bar .top-bar-wrapper {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  background: white;
+  color: #024b6c;
+  padding: 12px 0;
+  margin: 0 50px;
+  border-bottom: 1px solid #d8e3e8;
+}
+
+.top-bar .top-bar-wrapper .left-navbar .nav-link-address i {
+  font-size: 16px;
+  color: #305f75;
+  margin-right: 10px;
+}
+
+.top-bar .top-bar-wrapper .left-navbar .nav-phone {
+  margin: 0 50px;
+}
+
+.top-bar .top-bar-wrapper .left-navbar .nav-phone i {
+  font-size: 16px;
+  color: #305f75;
+  margin-right: 10px;
+}
+
+.top-bar .top-bar-wrapper .nav-icons {
+  left: 0;
+}
+
+.top-bar .top-bar-wrapper .nav-icons .header-icons li {
+  color: #638da0;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.top-bar .top-bar-wrapper .nav-icons .header-icons li:hover {
+  color: #024b6c;
+}
+
+.top-header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  margin-top: 40px;
+}
+
+.top-header .top-header-wrapper {
+  padding: 20px 0;
+  margin: 0 50px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.top-header .top-header-wrapper .logo img {
+  height: 40px;
+}
+
+.top-header .top-header-wrapper .navbar .navbar-row a {
+  color: #024b6c;
+}
+
+.top-header .top-header-wrapper .navbar .navbar-row a li {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 15px;
+  padding-bottom: 5px;
+}
+
+.top-header .top-header-wrapper .navbar .navbar-row .home-icon {
+  border-bottom: 1px solid black;
+}
+
+.top-header .top-header-wrapper .appointment {
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  background: #e9490a;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin-left: 80px;
+}
+
+.top-header .top-header-wrapper .appointment:hover {
+  background: transparent;
+  color: #024b6c;
+  border: 1px solid black;
+}
+
+.landing-page {
+  background-image: url(../image/portf_header.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 1100px;
+  height: 400px;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+.landing-page .landing-info {
+  color: #024b6c;
+  padding: 40px 30px;
+}
+
+.landing-page .landing-info h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.landing-page .landing-info h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #025c85;
+}
+
+.landing-page .landing-info p {
+  margin: 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #0375a8;
+}
+
+.landing-page .landing-info .our-services {
+  padding: 10px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  background: #e9490a;
+  color: white;
+  border-radius: 5px;
+}
+
+.landing-page .landing-info .our-services:hover {
+  background: transparent;
+  color: #024b6c;
+  border: 1px solid black;
+}
+
+.book-appointment {
+  background: #16a0b8;
+  color: white;
+  max-width: 1180px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.book-appointment .book-appointment-wrapper {
+  border-right: 1px solid #d8e3e8;
+}
+
+.book-appointment .book-appointment-wrapper .container .header {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.book-appointment .book-appointment-wrapper .container .input-wrapper .input-row {
+  margin-bottom: 30px;
+}
+
+.book-appointment .book-appointment-wrapper .container .input-wrapper .input-row input {
+  width: 320px;
+  height: 50px;
+  margin-right: 25px;
+  background-color: #eff5f7;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  padding: 0 25px;
+}
+
+.book-appointment .book-appointment-wrapper .container .input-wrapper .input-row input:focus {
+  outline: none;
+}
+
+.book-appointment .book-appointment-wrapper .container .input-wrapper .input-row input::placeholder {
+  color: #336f8a;
+}
+
+.book-appointment .book-appointment-wrapper .container textarea {
+  width: 320px;
+  height: 50px;
+  margin-right: 25px;
+  background-color: #eff5f7;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  padding: 0 25px;
+  border-radius: 5px;
+  max-width: 100%;
+  width: 640px;
+  max-height: 320px;
+  height: 170px;
+  padding: 25px;
+}
+
+.book-appointment .book-appointment-wrapper .container textarea:focus {
+  outline: none;
+}
+
+.book-appointment .book-appointment-wrapper .container textarea::placeholder {
+  color: #336f8a;
+}
+
+.book-appointment .book-appointment-wrapper .container .send-message {
+  padding: 10px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  background: #e9490a;
+  color: white;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.book-appointment .book-appointment-wrapper .container .send-message:hover {
+  background: transparent;
+  color: #024b6c;
+  border: 1px solid black;
+}
+
+.book-appointment .book-appointment-wrapper .container .send-message:hover {
+  color: white;
+  border-color: white;
+}
+
+.book-appointment .contact-us {
+  color: white;
+  padding: 45px;
+  line-height: 24px;
+}
+
+.book-appointment .contact-us .contact-text {
+  color: white;
+  margin-bottom: 55px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.35px;
+}
+
+.book-appointment .contact-us .address-header {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.book-appointment .contact-us .address-info {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+.book-appointment .contact-us .address-info.street {
+  margin-bottom: 50px;
+}
+
+.book-appointment .contact-us .call-direct {
+  bottom: 50px;
+}
+
+.book-appointment .contact-us .call-direct span {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.book-appointment .contact-us .call-direct .call-number {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+#why-choose-us {
+  padding: 50px 30px;
+  font-family: "Cabin", sans-serif;
+}
+
+#why-choose-us .why-choose-us-wrapper {
+  margin: 0 36px;
+  color: #024b6c;
+}
+
+#why-choose-us .why-choose-us-wrapper .text {
+  margin-bottom: 50px;
+}
+
+#why-choose-us .why-choose-us-wrapper .text .strong-header {
+  font-family: "Cabin", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#why-choose-us .why-choose-us-wrapper .text .light-header {
+  font-family: "Cabin", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper {
+  margin-top: 50px;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .facilities i {
+  font-size: 42px;
+  color: #01addd;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .facilities .icon-content {
+  margin-top: 15px;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .facilities .icon-content h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .facilities .icon-content p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .doctors i {
+  font-size: 42px;
+  color: #01addd;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .doctors .icon-content {
+  margin-top: 15px;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .doctors .icon-content h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .doctors .icon-content p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .services i {
+  font-size: 42px;
+  color: #01addd;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .services .icon-content {
+  margin-top: 15px;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .services .icon-content h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .services .icon-content p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .care i {
+  font-size: 42px;
+  color: #01addd;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .care .icon-content {
+  margin-top: 15px;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .care .icon-content h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#why-choose-us .why-choose-us-wrapper .info-wrapper .info-items .care .icon-content p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+/*# sourceMappingURL=style.css.map */
